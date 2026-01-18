@@ -19,10 +19,10 @@ export const APP_TAGS = ["art", "nft", "marketplace", "base", "opensea"];
 export const APP_WEBHOOK_URL = `${APP_URL}/api/webhook`;
 export const APP_ACCOUNT_ASSOCIATION = {
   header:
-    "eyJmaWQiOjIzOTUzMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweGQzRmRBNjEyNjc2M0U3RjNkMEExRjE3RjM4YjVFMDNFNTAwM2MxQUUifQ",
-  payload: "eyJkb21haW4iOiJmYXItY291bnRlci52ZXJjZWwuYXBwIn0",
+    "eyJmaWQiOjMxNzI2MSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweDQ5ZWUzMjNFYTFCYjY1RjY4RkE3NWRmMGM2RDQ0MWQyMGQ4M0E4Q2QifQ",
+  payload: "eyJkb21haW4iOiJjb2xsZWN0b3ItbmZ0LnZlcmNlbC5hcHAifQ",
   signature:
-    "8sH/qJqYJ/btJXJ6HSJiURbFAYowjMvVCS7KEwSyOH0c3WX3GCaxJgUwk/dZ8qgxvXB+uogdHVn79bq7SsGybRw=",
+    "F1R1PwkH5aoYcSJp6YbH0AmHeoP0rzaIut2lOu1fYGw2BkG+9iAOcnQToo+VBAOeh4ymkGP6oFTp5fhp0+ZjCBs=",
 };
 
 export const notificationsBtn = [
