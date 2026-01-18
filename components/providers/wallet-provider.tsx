@@ -1,0 +1,52 @@
+"use client";
+
+import { farcasterMiniApp as miniAppConnector } from "@farcaster/miniapp-wagmi-connector";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { http, WagmiProvider, createConfig } from "wagmi";
+import {
+  arbitrum,
+  base,
+  optimism,
+  polygon,
+  story,
+  baseSepolia,
+  mainnet,
+  celo,
+  zora,
+} from "wagmi/chains";
+
+export const config = createConfig({
+  chains: [
+    base,
+    arbitrum,
+    optimism,
+    polygon,
+    story,
+    baseSepolia,
+    mainnet,
+    celo,
+    zora,
+  ],
+  transports: {
+    [base.id]: http(),
+    [arbitrum.id]: http(),
+    [optimism.id]: http(),
+    [polygon.id]: http(),
+    [story.id]: http(),
+    [baseSepolia.id]: http(),
+    [mainnet.id]: http(),
+    [celo.id]: http(),
+    [zora.id]: http(),
+  },
+  connectors: [miniAppConnector()],
+});
+
+const queryClient = new QueryClient();
+
+export function WalletProvider({ children }: { children: React.ReactNode }) {
+  return (
+    <WagmiProvider config={config}>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    </WagmiProvider>
+  );
+}
