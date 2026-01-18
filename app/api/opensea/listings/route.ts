@@ -102,6 +102,8 @@ export async function GET(request: Request) {
           currency: order.payment_token?.symbol ?? "ETH",
         },
         listingOrder: order,
+        isOwner: true,
+        ownerAddress: address ?? undefined,
       };
     });
 

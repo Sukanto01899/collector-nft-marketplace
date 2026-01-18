@@ -286,7 +286,7 @@ export default function NFTGalleryView({
                 </div>
               ) : null}
 
-              <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-3 text-xs leading-relaxed text-slate-300">
+              <div className="rounded-2xl border border-white/10 bg-slate-900/60 p-3 text-xs leading-relaxed text-slate-300 line-clamp-2">
                 {selected.description ??
                   "No description provided. Tap into the details to explore the collection story."}
               </div>
