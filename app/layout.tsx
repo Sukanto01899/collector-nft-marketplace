@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Collector is a NFT marketplace to explore collections, list NFTs, and make offers across Base and major EVM chains.",
   other: {
-    "base:app_id": "",
+    "base:app_id": "696d487ef22fe462e74c13ed",
   },
 };
 const config = {
